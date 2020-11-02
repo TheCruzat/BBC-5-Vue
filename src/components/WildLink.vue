@@ -60,7 +60,6 @@ export default {
 
 
       &:first-child {
-        // color: var(--hot);
         border-bottom: 1px solid #ccc;
         margin-bottom: 0.2rem;
       }

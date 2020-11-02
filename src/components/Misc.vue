@@ -11,18 +11,6 @@
       <p>the only path to success is through failure</p>
       <p>John showed us <a href="//thecruzat.com" title="This Is The Way" target="_blank">the autodidact way</a></p>
       <p>Evanston Elite Is Forever</p>
-      <!-- p>endless circuits between Chicago and St Paul</p>
-      <p>a dozen runs from the midwest to DC</p>
-      <p>light years in the neon on Western Ave</p>
-      <p>stumbling around Madison WI</p>
-      <p>1st site hosted on Crosswinds, 1999</p>
-      <p>lifelong Doctor Who fan</p>
-      <p>maker of weirdo hip hop / electronic music since 199?</p>
-      <p>Spanish rice approaching perfection</p>
-      <p>I annoy Sharkula</p>
-      <p>once had a caper with Pete Wentz & Chicago Legend Jody Minnoch</p>
-      <p>once cursed out by Dan Aykroyd</p>
-      <p>will retire to be a dogwalker</p-->
     </div>
   </section>
 </template>
