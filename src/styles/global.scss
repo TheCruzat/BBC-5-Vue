@@ -1,0 +1,135 @@
+@import 'vars';
+
+html, body {
+  margin: 0; padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $bod; // #2c3e50;
+  // margin-top: 60px;
+}
+
+section, footer {
+  margin-top: 2rem;
+  @include mFlip() {
+    margin-top: 10vh;
+  }
+
+}
+
+section {
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  a {
+    color: var(--hot);
+  }
+
+  h2 {
+    font-family: var(--title);
+    text-transform: lowercase;
+
+    font-size: 2.55rem;
+    margin: 0 0 1vh;
+    text-align: left;
+    width: 100%;
+    padding: 0 var(--gutter);
+
+    @include mFlip() {
+      text-align: center;
+      font-size: 4vw;
+    }
+  }
+
+  h3 {
+    font-family: var(--title);
+    color: var(--con);
+  }
+
+  .flat {
+    padding: 8px var(--gutter);
+    max-width: 64rem;
+    width: 100%;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+    // text-shadow: 0 1px 1px #fff;
+    // border: 1px solid #fff;
+    text-align: left;
+
+    @include mFlip() {
+      text-align: center;
+      padding: 20px 32px;
+    }
+
+    // box-shadow: inset 0 0 20px rgba(130, 130, 130, 0.4);
+
+    &:before {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: block;
+      content: "";
+      // background: var(--paper);
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    &:after {
+      // background: url("assets/paperbglined.png") 50% 50% no-repeat fixed; // rgba(255,255,255,0.9);
+      // background-size: cover;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: block;
+      content: "";
+      z-index: -2;
+    }
+
+    + .flat {
+      // margin-top: 4vh
+      // margin-top: -1px;
+      padding-top: 0;
+    }
+  }
+}
+
+.container {
+  padding: var(--gutter);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--hot);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.8rem 2.4rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+  border: 2px solid var(--hot);
+  transition: all 0.35s ease-in;
+
+  &:hover {
+    transition: all 0.15s ease-out;
+    background: #fff;
+    color: var(--hot);
+  }
+}

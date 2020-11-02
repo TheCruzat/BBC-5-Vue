@@ -1,0 +1,35 @@
+@import url('//fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@mixin mFlip() {
+  @media (min-width: 64rem) {
+    @content;
+  }
+}
+
+.title {
+  font-family: 'Bree Serif', cursive;
+}
+
+.subtitle {
+  font-family: 'Bree Serif', cursive;
+}
+
+$bod:   #2c3e50;
+$hot:   #B846B8;
+$con:   #46B8B8;
+$dim:   #ff99ee;
+$paper: #f0f0f0;
+
+:root {
+  --bod: #{$bod};
+  --hot: #{$hot};
+  --dim: #{$dim};
+  --con: #{$con};
+  --paper: #{$paper};
+
+  --gutter: 20px;
+
+  --title: 'Bree Serif', cursive;
+  --subtitle: 'Bree Serif', cursive;
+}
